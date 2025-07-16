@@ -1,6 +1,9 @@
-package dev.java10x.CadastroDeClientes;
+package dev.java10x.CadastroDeClientes.Clientes.Controller.Service;
 
+import dev.java10x.CadastroDeClientes.Carros.CarrosModel;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 
 // Entity transforma uma classe em uma entidade do BD
@@ -16,9 +19,15 @@ public class ClienteModel {
     private String profissão;
     private String escolaridade;
 
+    @ManyToOne
+    @JoinColumn(name = "carros_id") // Foreing KEY = chave estrangeira
+    private CarrosModel carros;
+
     public ClienteModel(){
 
     }
+
+
 
     public ClienteModel(String nome, String cidade, String profissão, String escolaridade) {
         this.nome = nome;

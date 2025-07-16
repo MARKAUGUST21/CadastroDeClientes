@@ -1,4 +1,4 @@
-package dev.java10x.CadastroDeClientes;
+package dev.java10x.CadastroDeClientes.Clientes.Controller.Service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
