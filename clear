@@ -1,0 +1,17 @@
+[33mcommit 5ad21a43a3cda8a558315ec2a947f75bad1a3000[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mAula2[m[33m, [m[1;31morigin/Aula2[m[33m)[m
+Author: Marcos Pedro Camargo <mcmpgui12@gmail.com>
+Date:   Tue Jul 15 21:12:08 2025 -0300
+
+    Cria uma entidade no banco de dados apartir do ClienteModel [Aula3]
+
+[33mcommit bad6c7ffdc0e988e0e5089c122f2ed6938b8de84[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Marcos Pedro Camargo <mcmpgui12@gmail.com>
+Date:   Tue Jul 15 20:10:31 2025 -0300
+
+    Criado a Controller aula02
+
+[33mcommit ab999eefac1e9225ac7c5c0746e0d3a5f7702a6f[m
+Author: Marcos Pedro Camargo <mcmpgui12@gmail.com>
+Date:   Tue Jul 15 11:29:29 2025 -0300
+
+    Primeiro commit do projeto CadastroDeClientes
