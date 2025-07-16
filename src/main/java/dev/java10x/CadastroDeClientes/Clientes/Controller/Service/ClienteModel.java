@@ -21,10 +21,18 @@ public class ClienteModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String nome;
-    private String cidade;
+
+    // Isso é usado para quando precisa que seje unico!
+    @Column(unique = true)
+    private String email;
+
     private String profissão;
+
     private String escolaridade;
+
+
 
     @ManyToOne
     @JoinColumn(name = "carros_id") // Foreing KEY = chave estrangeira
