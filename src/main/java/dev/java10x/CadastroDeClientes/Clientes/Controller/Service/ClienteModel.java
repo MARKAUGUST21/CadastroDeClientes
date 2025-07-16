@@ -2,6 +2,9 @@ package dev.java10x.CadastroDeClientes.Clientes.Controller.Service;
 
 import dev.java10x.CadastroDeClientes.Carros.CarrosModel;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
@@ -9,6 +12,10 @@ import java.util.List;
 // Entity transforma uma classe em uma entidade do BD
 @Entity
 @Table(name = "tb_cadastro")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class ClienteModel {
 
     @Id
@@ -23,48 +30,7 @@ public class ClienteModel {
     @JoinColumn(name = "carros_id") // Foreing KEY = chave estrangeira
     private CarrosModel carros;
 
-    public ClienteModel(){
-
-    }
 
 
 
-    public ClienteModel(String nome, String cidade, String profissão, String escolaridade) {
-        this.nome = nome;
-        this.cidade = cidade;
-        this.profissão = profissão;
-        this.escolaridade = escolaridade;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getCidade() {
-        return cidade;
-    }
-
-    public void setCidade(String cidade) {
-        this.cidade = cidade;
-    }
-
-    public String getProfissão() {
-        return profissão;
-    }
-
-    public void setProfissão(String profissão) {
-        this.profissão = profissão;
-    }
-
-    public String getEscolaridade() {
-        return escolaridade;
-    }
-
-    public void setEscolaridade(String escolaridade) {
-        this.escolaridade = escolaridade;
-    }
 }
